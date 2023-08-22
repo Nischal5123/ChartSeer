@@ -164,10 +164,9 @@ if __name__ == '__main__':
             line = line.strip()
             rules.append(line)
 
-    #sess = tf.Session()
-    #tf.keras.backend.set_session(sess)
+
     visvae = VisVAE(modelsave, rules, MAX_LEN, LATENT)
-   # graph = tf.get_default_graph()
+
 
     pca = PCA(n_components=2)
 
