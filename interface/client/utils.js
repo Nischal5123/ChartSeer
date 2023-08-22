@@ -227,7 +227,7 @@ export function updateData(data, name) {
     app.data.chartspecs = data.charts
 
     app.sumview = new SumView(d3.select('#sumview'), app.data, {
-        backend: 'http://localhost:5000',
+        backend: 'http://localhost:5500',
         size: [$('#sumview').width(), $('#sumview').height()],
         margin: 10,
         chartclr: ['#f1a340', '#998ec3']
