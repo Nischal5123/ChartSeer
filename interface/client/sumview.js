@@ -779,7 +779,7 @@ export default class SumView extends EventEmitter {
                 }
             }).finally(() => {
                 this.render()
-                this.emit('recommendchart')
+                this.emit('recommendchart')  //recommending the chart
             })
         })
     }
