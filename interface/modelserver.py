@@ -19,7 +19,7 @@ from flask_cors import CORS
 from gvaemodel.vis_vae import VisVAE, get_rules, get_specs
 from gvaemodel.vis_grammar import VisGrammar
 
-port = 5000
+port = 5500
 rulesfile = './gvaemodel/rules-cfg.txt'
 modelsave = './gvaemodel/vae_H256_D256_C444_333_L20_B200.hdf5'
 
@@ -154,10 +154,10 @@ if __name__ == '__main__':
             line = line.strip()
             rules.append(line)
 
-    sess = tf.Session()
-    tf.keras.backend.set_session(sess)
+    sess = tf.compat.v1.Session()
+    tf.compat.v1.keras.backend.set_session(sess)
     visvae = VisVAE(modelsave, rules, MAX_LEN, LATENT)
-    graph = tf.get_default_graph()
+    graph = tf.compat.v1.get_default_graph()
 
     pca = PCA(n_components=2)
 

@@ -1,13 +1,13 @@
 from keras import backend as K
-from keras import objectives
+from keras import losses
 from keras import optimizers
 from keras.models import Model
 from keras.layers import Input, Dense, Lambda
-from keras.layers.core import Dense, Activation, Flatten, RepeatVector
-from keras.layers.wrappers import TimeDistributed
-from keras.layers.recurrent import GRU, LSTM
-from keras.layers.convolutional import Convolution1D
-from keras.layers.normalization import BatchNormalization
+from keras.layers import Dense, Activation, Flatten, RepeatVector
+from keras.layers import TimeDistributed
+from keras.layers import GRU, LSTM
+from keras.layers import Convolution1D
+from keras.layers import BatchNormalization
 import tensorflow as tf
 
 from .vis_grammar import VisGrammar
@@ -114,7 +114,7 @@ class ModelVAE():
             x_decoded_mean = K.flatten(x_decoded_mean)
             x = K.flatten(x)
             x_decoded_mean = K.flatten(x_decoded_mean)
-            xent_loss = max_length * objectives.binary_crossentropy(x, x_decoded_mean)
+            xent_loss = max_length * losses.binary_crossentropy(x, x_decoded_mean)
             kl_loss = - 0.5 * K.mean(1 + z_log_var - K.square(z_mean) - K.exp(z_log_var), axis = -1)
             return xent_loss + kl_loss
 
@@ -139,4 +139,4 @@ class ModelVAE():
         self.autoencoder.save_weights(filename)
     
     def load(self, rules, weights_file, latent_rep_size, max_length, hypers):
-        self.create(rules, latent_rep_size = latent_rep_size, max_length = max_length, hypers = hypers, weights_file = weights_file)
+        self.create(rules, latent_rep_size = latent_rep_size, max_length = max_length, hypers = hypers, weights_file = None)
