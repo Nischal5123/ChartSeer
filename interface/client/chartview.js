@@ -198,7 +198,7 @@ export default class ChartView extends EventEmitter {
             })
         }) 
         sp = sp.replace(/[\s|\n]+/g, '')
-
+        debugger
         $.ajax({
             type: 'POST',
             crossDomain: true,
