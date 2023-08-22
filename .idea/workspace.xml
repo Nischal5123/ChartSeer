@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08d56d63-7dc3-47e8-ada0-80d386c7aa6b" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/interface/client/sumview.js" beforeDir="false" afterPath="$PROJECT_DIR$/interface/client/sumview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/client/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/interface/client/utils.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/gvaemodel/model_vae.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/gvaemodel/model_vae.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/modelserver.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/modelserver.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/client/chartview.js" beforeDir="false" afterPath="$PROJECT_DIR$/interface/client/chartview.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/interface/client/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,7 +92,7 @@
       <workItem from="1692570031270" duration="715000" />
       <workItem from="1692570758270" duration="10670000" />
       <workItem from="1692642639862" duration="15054000" />
-      <workItem from="1692672602748" duration="8991000" />
+      <workItem from="1692672602748" duration="10582000" />
     </task>
     <servers />
   </component>

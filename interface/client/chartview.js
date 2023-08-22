@@ -208,7 +208,7 @@ export default class ChartView extends EventEmitter {
         }).done((data) => {
             callback()
         }).fail((xhr, status, error) => {
-            alert('This chart is not supported.')
+            alert('This chart is currently not supported.')
         })
     }
 }
