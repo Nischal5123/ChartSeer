@@ -19,6 +19,8 @@ from flask_cors import CORS
 from gvaemodel.vis_vae import VisVAE, get_rules, get_specs
 from gvaemodel.vis_grammar import VisGrammar
 
+from dracointegration import start_draco
+
 port = 5500
 rulesfile = './gvaemodel/rules-cfg.txt'
 modelsave = './gvaemodel/vae_H256_D256_C444_333_L20_B200.hdf5'
@@ -72,18 +74,25 @@ def handle_invalid_usage(error):
 
 @app.route('/encode', methods=['POST'])
 def encode():
+    #to Draco encode endpoint: ASP
     specs = request.get_json()
     try:
 
             #tf.keras.backend.set_session(sess)
             z = visvae.encode(specs)
+            #draco
+            #z=start_draco(specs)
     except Exception as e:
         raise InvalidUsage(e.message)
     return jsonify(z.tolist())
 
 
+
+
+
 @app.route('/decode', methods=['POST'])
 def decode():
+    #to Draco change ASP to Vegalite
     z = np.array(request.get_json())
     try:
 

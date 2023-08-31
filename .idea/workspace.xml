@@ -5,15 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="08d56d63-7dc3-47e8-ada0-80d386c7aa6b" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/interface/client/assets/SumView_Description.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/interface/dracointegration.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/client/chartview.js" beforeDir="false" afterPath="$PROJECT_DIR$/interface/client/chartview.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/interface/client/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/interface/client/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/client/utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/interface/client/utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/interface/modelserver.py" beforeDir="false" afterPath="$PROJECT_DIR$/interface/modelserver.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="FlaskConsoleOptions" custom-start-script="import sys&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;from flask.cli import ScriptInfo&#10;locals().update(ScriptInfo(create_app=None).load_app().make_shell_context())&#10;print(&quot;Python %s on %s\nApp: %s [%s]\nInstance: %s&quot; % (sys.version, sys.platform, app.import_name, app.env, app.instance_path))">
     <envs>
@@ -54,8 +63,30 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Flask server.Flask (interface/modelserver.py)">
+  <component name="RunManager" selected="JavaScript Debug.ChartSeerDebug">
     <configuration name="ChartSeerDebug" type="JavascriptDebugType" uri="http://localhost:8000/">
+      <method v="2" />
+    </configuration>
+    <configuration name="dracointegration" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="ChartSeer" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/interface" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/interface/dracointegration.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="Flask (interface/modelserver.py)" type="Python.FlaskServer" nameIsGenerated="true">
@@ -66,10 +97,9 @@
       <option name="targetType" value="PATH" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="$PROJECT_DIR$/venv/bin/python" />
-      <option name="SDK_NAME" value="Python 3.9 (ChartSeer)" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
@@ -79,7 +109,13 @@
     <list>
       <item itemvalue="Flask server.Flask (interface/modelserver.py)" />
       <item itemvalue="JavaScript Debug.ChartSeerDebug" />
+      <item itemvalue="Python.dracointegration" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.dracointegration" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -92,16 +128,46 @@
       <workItem from="1692570031270" duration="715000" />
       <workItem from="1692570758270" duration="10670000" />
       <workItem from="1692642639862" duration="15054000" />
-      <workItem from="1692672602748" duration="10582000" />
+      <workItem from="1692672602748" duration="17425000" />
+      <workItem from="1692841992800" duration="25000" />
+      <workItem from="1692843283118" duration="5545000" />
+      <workItem from="1692909343470" duration="610000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/interface/client/app1.js</url>
+          <line>30</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/interface/client/chartview.js</url>
+          <line>189</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/interface/dracointegration.py</url>
+          <line>11</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/interface/dracointegration.py</url>
+          <line>13</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/ChartSeer$dracointegration.coverage" NAME="dracointegration Coverage Results" MODIFIED="1692846231444" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
     <SUITE FILE_PATH="coverage/ChartSeer$modelserver.coverage" NAME="modelserver Coverage Results" MODIFIED="1692678119024" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/interface" />
-    <SUITE FILE_PATH="coverage/ChartSeer$Flask__interface_modelserver_py_.coverage" NAME="Flask (interface/modelserver.py) Coverage Results" MODIFIED="1692679355227" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/ChartSeer$Flask__interface_modelserver_py_.coverage" NAME="Flask (interface/modelserver.py) Coverage Results" MODIFIED="1692848261955" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
     <SUITE FILE_PATH="coverage/ChartSeer$ChartSeer.coverage" NAME="ChartSeer Coverage Results" MODIFIED="1692570443490" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/.." />
   </component>
 </project>
