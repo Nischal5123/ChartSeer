@@ -61,7 +61,7 @@ const config = {
 
   plugins: [
     new CleanWebpackPlugin(['public']),
-    new HtmlWebpackPlugin({template: 'index.html', chunks: ['app1'], filename: 'index.html'}),
+    new HtmlWebpackPlugin({template: './index.html', chunks: ['app1'], filename: 'index.html'}),
     extractPlugin
   ],
 
@@ -78,7 +78,7 @@ const config = {
   devtool: 'eval-source-map',
 
   cache: true
-
 };
 
 module.exports = config;
+

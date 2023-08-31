@@ -1,11 +1,14 @@
-import tensorflow as tf
-from tensorflow.keras import backend as K
-# from tensorflow.keras import objectives
-from tensorflow.keras import optimizers
-from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Input, Dense, Lambda, RepeatVector, TimeDistributed, Flatten
-from tensorflow.keras.layers import Convolution1D, BatchNormalization, GRU
-from .vis_grammar import VisGrammar
+
+from keras import backend as K
+from keras import losses
+from keras import optimizers
+from keras.models import Model
+from keras.layers import Input, Dense, Lambda
+from keras.layers import Dense, Activation, Flatten, RepeatVector
+from keras.layers import TimeDistributed
+from keras.layers import GRU, LSTM
+from keras.layers import Convolution1D
+from keras.layers import BatchNormalization
 
 from .vis_grammar import VisGrammar
 
@@ -112,6 +115,7 @@ class ModelVAE():
             x_decoded_mean = K.flatten(x_decoded_mean)
             xent_loss = max_length * tf.keras.losses.binary_crossentropy(x, x_decoded_mean)
             kl_loss = - 0.5 * K.mean(1 + z_log_var - K.square(z_mean) - K.exp(z_log_var), axis=-1)
+
             return xent_loss + kl_loss
 
         return (vae_loss, Lambda(sampling, output_shape=(latent_rep_size,), name='lambda')([z_mean, z_log_var]))
@@ -136,3 +140,4 @@ class ModelVAE():
     def load(self, rules, weights_file, latent_rep_size, max_length, hypers):
         self.create(rules, latent_rep_size=latent_rep_size, max_length=max_length, hypers=hypers,
                     weights_file=False)
+
